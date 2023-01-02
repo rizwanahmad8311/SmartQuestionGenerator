@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!--========== FONT AWESOME CSS ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!--font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <!-- Bootstrap CSS -->
+     {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> {% endcomment %}
+
+
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+    <title>SQG</title>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav1 bd-container">
+            <div>
+
+                <a href="#" style="margin-right: 30%;" ><i class="bx bx-layer" style="color:#069C54;font-size:35px;"></i></a>
+            </div>
+            <a href="#" class="nav1__logo" style="margin-right: 30%;" >SmartQuestGen</a>
+            
+
+
+            <div class="nav1__menu" id="nav-menu">
+                <ul class="nav1__list">
+                    <li class="nav1__item"><a href="#home" class="nav1__link active-link">Home</a></li>
+                    <li class="nav1__item"><a href="#demo" class="nav1__link">Demo</a></li>
+                    {% comment %} <li class="nav1__item"><a href="#how" class="nav1__link">How&nbsp;it&nbsp;works</a></li> {% endcomment %}
+                    <li class="nav1__item"><a href="#" class="nav1__link">Blog</a></li>
+                    <li class="nav1__item"><a href="#" class="nav1__link">Pricing</a></li>
+                    {% comment %} <li class="nav1__item"><a href="#services" class="nav1__link">Services</a></li> {% endcomment %}
+                    <li class="nav1__item"><a href="#about" class="nav1__link">Team</a></li>
+                    <li class="nav1__item"><a href="#contact" class="nav1__link">Contact</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav1__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <center>
+                        <h2 class="home__subtitle">Generate <span style="color: #069C54;"> quizzes </span>from <br> any
+                            text in one click <br>using AI.</h2>
+                    </center>
+                    <h1 class="home__subtitle scroller" style="margin-left: 16%;">For&nbsp;
+                        <!-- Scroller Start -->
+
+                        <span style="color: #069C54;">
+                            Teachers<br />
+                            Schools<br />
+                            HR Teams</span>
+
+
+                        <!-- Scroller End -->
+                    </h1>
+                    <p style="text-align: center;">To generate assessments at scale.</p>
+                    <center><a href="#" class="button">Start for free &nbsp;<i class="fas fa-arrow-right"></i></a>
+                    </center>
+                    <p style="text-align: center;">No Credit Card required!</p>
+                </div>
+
+                <img src="{% static 'assets/img/home.avif' %}" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== DEMO ==========-->
+        <section class="demo section  bd-container" id="demo">
+            <div class="about__container ">
+                <div class="about__data">
+                    <center><h1 class="section-subtitle " style="font-size:40px;">Product Demo</h1></center>
+                    <center><p class="">Questgen provides an authoring tool to generate various kinds of assessments like Multiple Choice Questions (MCQs), True/False Questions, Higher-Order Questions, etc in 1-click. You can edit and make modifications to the generated worksheet before exporting it as plain text or Pdf.</p></center>
+                    {% comment %} <a href="#" class="button">Explore history</a> {% endcomment %}
+                    {% comment %} <center class="video"><object class="video" style="height: 390px; width: 640px; margin-top:20px"><param name="movie" value="http://www.youtube.com/v/kbCYfmcBuE4"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed class="embd" src="http://www.youtube.com/v/kbCYfmcBuE4" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390"></object></center> {% endcomment %}
+                        <div class="embed-youtube">
+                            <iframe src="//www.youtube.com/embed/kbCYfmcBuE4" width="750" height="563"></iframe>
+                        </div>
+                    </div>
+
+                {% comment %} <img src="{% static 'assets/img/about.jpg' %}" alt="" class="about__img"> {% endcomment %}
+            </div>
+        </section>
+
+        <!--========== How it works ==========-->
+        <section class="about section bd-container" id="how">
+            <center><h1 class="section-subtitle " style="font-size:40px;">How it works</h1></center>
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle" style="font-size:27px;">01 Enter any text </span>
+                    <p class="about__description">Enter any text, choose the type of quiz questions to be generated (MCQ, True/False or Higher Order QA) and click on Generate Questions.</p>
+                    <center><a href="#" class="button">Start for free &nbsp;<i class="fas fa-arrow-right"></i></a>                </div>
+
+                <img src="{% static 'assets/img/how1.avif' %}" alt="" class="how1">
+            </div>
+            <div class="about__container  bd-grid " style="margin-top:120px;">
+                <div class="about__data">
+                    <span class="section-subtitle" style="font-size:27px;">02 Edit and export quiz</span>
+                    <p class="about__description">You can edit quiz questions and export them to PDF or text format.</p>
+                    <center><a href="#" class="button">Start for free &nbsp;<i class="fas fa-arrow-right"></i></a>                </div>
+
+                <img src="{% static 'assets/img/how2.gif' %}" alt="" class="about__img">
+            </div>
+        </section>
+
+
+       
+
+        <!--========== Team ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="container bd-grid">
+                <center><h1 class="section-subtitle " style="font-size:40px;">Meet our Team</h1></center>
+
+                <div class="row">
+      
+    <!--1st member-->
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{% static 'assets/img/safdar.jpg' %}">
+                    </div>
+                    <h3 class="title">Safdar Hussain</h3>
+                    <span class="post">Researcher</span>
+
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                 </ul>
+
+                </div>
+            </div>
+
+    <!--2nd member-->
+     
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{% static 'assets/img/rizi.jpeg' %}">
+                    </div>
+                    <h3 class="title">Rizwan Ahmad</h3>
+                    <span class="post">Web Developer</span>
+
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                 </ul>
+
+                </div>
+            </div>
+
+    <!--3rd member-->
+    
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{% static 'assets/img/Esha.jpeg' %}">                    </div>
+                    <h3 class="title" >Esha Javed</h3>
+                    <span class="post" >Web Designer</span>
+                    
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                 </ul>
+   
+                </div>
+            </div>
+
+
+
+            
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's talk</span>
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <p class="contact__description">If you have any query, contact us and we
+                        will attend you quickly, with our 24/7 chat service.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button">Contact us now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">SmartQuestGen</a>
+                <span class="footer__description">Ai Tool</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">AI MCQ Generator</a></li>
+                    <li><a href="#" class="footer__link">AI FAQ Generator</a></li>
+                    <li><a href="#" class="footer__link">AI True or False Generator</a></li>
+                    <li><a href="#" class="footer__link">AI Higher Order Question Generator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+                    <li><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            {% comment %} <div class="footer__content">
+                <h3 class="footer__title">Adress</h3>
+                <ul>
+                    <li>Lima - Peru</li>
+                    <li>Jr Union #999</li>
+                    <li>999 - 888 - 777</li>
+                    <li>tastyfood@email.com</li>
+                </ul>
+            </div> {% endcomment %}
+        </div>
+
+        <p class="footer__copy">&#169; 2022 Rizi. All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
